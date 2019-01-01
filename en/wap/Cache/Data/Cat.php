@@ -1,0 +1,2 @@
+<?php
+return array ( 'gs' => '56', 'gcal' => '29', 'rmss' => '10', 'rmss1' => '11', 'smss2' => '12', 'rmss3' => '13', 'gsjj' => '17', 'wzdt' => '19', 'cpzx' => '42', 'qywh' => '57', 'qyzz' => '58', 'qyhj' => '59', 'zyq' => '2', 'ggq' => '3', 'ggj' => '4', 'qtq' => '5', 'xwdt' => '8', 'lxsk' => '9', ); ?>

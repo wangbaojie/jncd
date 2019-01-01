@@ -1,0 +1,38 @@
+    <!--<div class="spic">
+          <volist name="list" id="r">
+          <div class="in-10-1"><a href="/wap{$r.url}"><img src="{$r.thumb}" width="150" height="110"></a><a href="/wap{$r.url}"><b>{$r.title|str_cut=###,36}</b></a></div>
+             </volist>
+        </div>
+    
+     <div id="pages" class="page">{$pages}</div>
+              <style type="text/css">
+             #pages { padding:10px 0 10px;text-align:center;font:12px '宋体'; margin-top:20px; float:left;width:100%}
+    #pages a { display:inline-block; padding:0px 8px; height:22px;font-size:12px;line-height:22px; background:#fff; border:1px solid #e3e3e3; text-align:center; color:#333}
+    #pages a.a1 {padding:0px 12px; height:22px; line-height:22px;margin-top:0px;}
+    #pages a:hover { background:#f1f1f1; color:#000; text-decoration:none; }
+    #pages span { display:inline-block;  padding:0px 8px; height:22px; line-height:22px; background:#5a85b2; border:1px solid #5a85b2; color:#fff; text-align:center; }
+    .page .noPage { display:inline-block;  padding:0px 12px; height:22px; line-height:22px;border:1px solid #e3e3e3; text-align:center; color:#a4a4a4; }
+             </style>
+             
+             
+-->          <div class="BackBox">
+	<div class="Back"><a href="/wap/">返回首页>></a></div>
+</div>
+<div class="BodaBox">
+	<div href="" class="Boda"><YP:catpos  catid="catid" space="-" /></div>
+</div>
+
+ 
+<div class="nhbRight">
+	<div class="npro">
+    	<ul>
+         <volist name="list" id="r">
+        	<li><a href="/wap{$r.url}"><img src="{$r.thumb}"></a><span>{$r.title|str_cut=###,30}</span></li>
+          </volist>
+        </ul>
+	</div>  
+     <div id="pages" class="page">{$pages}</div>     	
+</div>
+  
+ 
+<div style=" height:100px"></div>

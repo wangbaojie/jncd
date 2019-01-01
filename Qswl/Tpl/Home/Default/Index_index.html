@@ -1,0 +1,241 @@
+{__NOLAYOUT__}
+<include file="Home:header"/>
+<div id="floor_2_main">
+    <div class="title">
+        <h2 style="position: relative; left: 0px; opacity: 1;"><a href="">产品中心</a></h2>
+        <em style="position: relative; left: 0px; opacity: 1;">product center</em>
+        <i style="position: relative; top: 0px; opacity: 1;"></i>
+    </div>
+    <div id="floor_2">
+        <div class="left_body2">
+            <div class="hd">
+                <div class=" ding"><a href="" title="产品中心"><strong>产品分类</strong>PRODUCTS</a></div>
+                <ul class="subchannellist1">
+                    <YP:subcat catid="42">
+                        <li><a href="{$r.url}" title="MCZ单晶硅超导磁体">{$r.catname}</a></li>
+                    </YP:subcat>
+                </ul>
+            </div>
+            <div class="bd">
+
+                <dl class="gridlist1">
+                    <YP:list sql="select * from qswl_page where id=63">
+                        <dt><a href="{$Categorys[63][url]}"><img style="width: 415px;height: 415px;"
+                                                                 src="{$r.thumb}"></a></dt>
+                        <dd>
+                            <h2>{$Categorys[63][catname]}</h2>
+                            <p> {$r.content|str_cut=###,600} ......<a href="{$Categorys[63][url]}">【查看更多】</a></p>
+                        </dd>
+                    </YP:list>
+                </dl>
+                <dl class="gridlist1" style="display: none;">
+                    <YP:list sql="select * from qswl_page where id=64">
+                        <dt><a href="{$Categorys[64][url]}"><img style="width: 415px;height: 415px;"
+                                                                 src="{$r.thumb}"></a></dt>
+                        <dd>
+                            <h2>{$Categorys[64][catname]}</h2>
+                            <p> {$r.content|str_cut=###,600} ..... <a href="{$Categorys[64][url]}">【查看更多】</a></p>
+                        </dd>
+                    </YP:list>
+                </dl>
+                <dl class="gridlist1" style="display: none;">
+                    <YP:list sql="select * from qswl_page where id=66">
+                        <dt><a href="{$Categorys[66][url]}"><img style="width: 415px;height: 415px;"
+                                                                 src="{$r.thumb}"></a></dt>
+                        <dd>
+                            <h2>{$Categorys[66][catname]}</h2>
+                            <p> {$r.content|str_cut=###,600}......<a href="{$Categorys[66][url]}">【查看更多】</a></p>
+                        </dd>
+                    </YP:list>
+                </dl>
+                <dl class="gridlist1" style="display: none;">
+                    <YP:list sql="select * from qswl_page where id=71">
+                        <dt><a href="{$Categorys[71][url]}"><img style="width: 415px;height: 415px;"
+                                                                 src="{$r.thumb}"></a></dt>
+                        <dd>
+                            <h2>{$Categorys[71][catname]}</h2>
+
+                            <p> {$r.content|str_cut=###,600}......<a href="{$Categorys[71][url]}">【查看更多】</a></p>
+                        </dd>
+                    </YP:list>
+                </dl>
+                <dl class="gridlist1" style="display: none;">
+                    <YP:list sql="select * from qswl_page where id=2">
+                        <dt><a href="{$Categorys[2][url]}"><img style="width: 415px;height: 415px;"
+                                                                src="{$r.thumb}"></a></dt>
+                        <dd>
+                            <h2>{$Categorys[2][catname]}</h2>
+                            <p> {$r.content|str_cut=###,600}......<a href="{$Categorys[2][url]}">【查看更多】</a></p>
+                        </dd>
+                    </YP:list>
+                </dl>
+                <dl class="gridlist1" style="display: none;">
+                    <YP:list sql="select * from qswl_page where id=3">
+                        <dt><a href="{$Categorys[3][url]}"><img style="width: 415px;height: 415px;"
+                                                                src="{$r.thumb}"></a></dt>
+                        <dd>
+                            <h2>{$Categorys[3][catname]}</h2>
+                            <p> {$r.content|str_cut=###,600}......<a href="{$Categorys[3][url]}">【查看更多】</a></p>
+                        </dd>
+                    </YP:list>
+                </dl>
+                <dl class="gridlist1" style="display: none;">
+                    <YP:list sql="select * from qswl_page where id=4">
+                        <dt><a href="{$Categorys[4][url]}"><img style="width: 415px;height: 415px;"
+                                                                src="{$r.thumb}"></a></dt>
+                        <dd>
+                            <h2>{$Categorys[4][catname]}</h2>
+
+                            <p> {$r.content|str_cut=###,600}......<a href="{$Categorys[4][url]}">【查看更多】</a></p>
+
+
+                        </dd>
+                    </YP:list>
+                </dl>
+                <dl class="gridlist1" style="display: none;">
+                    <YP:list sql="select * from qswl_page where id=5">
+                        <dt><a href="{$Categorys[5][url]}"><img style="width: 415px;height: 415px;"
+                                                                src="{$r.thumb}"></a></dt>
+                        <dd>
+                            <h2>{$Categorys[5][catname]}</h2>
+
+                            <p> {$r.content|str_cut=###,600}......<a href="{$Categorys[5][url]}">【查看更多】</a></p>
+
+
+                        </dd>
+                    </YP:list>
+                </dl>
+              </div>
+            <div class="left_bottom2"></div>
+        </div>
+        <script>$("#floor_2 .left_body2").slide({no: 0});</script>
+    </div>
+</div>
+
+<div class="index_awxy" style="opacity: 1;">
+    <div class="title">
+        <h2 style="position: relative; left: 0px; opacity: 1; "><a href="{$Categorys[17][url]}"
+                                                                   style="color:#fff">企业简介</a></h2>
+        <em style="position: relative; left: 0px; opacity: 1; color:#fff">about us</em>
+        <i style="position: relative; top: 0px; opacity: 1; background:#fff"></i>
+    </div>
+    <div id="floor_3">
+        <p style="text-align: center;">
+            <YP:list sql="select * from qswl_page where id=17">
+                {$r.content|str_cut=###,500}
+            </YP:list>
+        </p>
+        <ul class="zizhi">
+            <YP:list order="id desc" catid="67" limit="5">
+                <li><a href="{$Categorys[67][url]}"><img width="170px" height="238px" src="{$r.thumb}"></a></li>
+            </YP:list>
+        </ul>
+    </div>
+</div>
+<div class="index_news">
+    <div class="title">
+        <h2 style="position: relative; left: 0px; opacity: 1;">
+            <a href="{$Categorys[8][url]}">新闻资讯</a></h2>
+        <em style="position: relative; left: 0px; opacity: 1;">news</em> <i
+            style="position: relative; top: 0px; opacity: 1;"></i>
+    </div>
+    <ul class="menu" style="opacity: 1;">
+        <li class="cur"><a href="{$Categorys[60][url]}" title="集团动态"> 集团动态</a></li>
+        <li class=""><a href="{$Categorys[61][url]}" title="行业动态">行业动态</a></li>
+        <li class=""><a href="{$Categorys[62][url]}" title="专家观点">专家观点</a></li>
+
+    </ul>
+    <b style="width: 100%; overflow: hidden;"></b>
+    <div class="newsbox" style="opacity: 1;">
+        <div class="newslist">
+            <YP:list order="id desc" catid="60" limit="1">
+            <div class="wentu">
+                <a href="{$r.url}" title="{$r.title}">
+                    <img src="{$r.thumb}" alt="{$r.title}" width="590" height="240"></a>
+                <h3><a href="{$r.url}" title="{$r.title}">{$r.title}</a> <span> {$r.createtime|date="Y-m-d",###}</span></h3>
+                <p>{$r.description}.......</p>
+            </div>
+            </YP:list>
+            <div class="listbox">
+                <?php $i=1; ?>
+                <YP:list order="id desc" catid="60" limit="3">
+                    <div class="list">
+                        <img src="/images/news-0{$i}.png" alt="{$r.title}" width="90" height="72">
+                        <div class="wen">
+                            <h3><a href="{$r.url}" title="{$r.title}">{$r.title}</a> <span>2018-08-07</span>
+                            </h3>
+                            <p> {$r.description|str_cut=###,100}......</p>
+                        </div>
+                    </div>
+                </YP:list>
+            </div>
+        </div>
+        <div class="newslist" style=" display:none">
+            <YP:list order="id desc" catid="61" limit="1">
+                <div class="wentu">
+                    <a href="{$r.url}" title="{$r.title}">
+                        <img src="{$r.thumb}" alt="{$r.title}" width="590" height="240"></a>
+                    <h3><a href="{$r.url}" title="{$r.title}">{$r.title}</a> <span> {$r.createtime|date="Y-m-d",###}</span></h3>
+                    <p>{$r.description}.......</p>
+                </div>
+            </YP:list>
+            <div class="listbox">
+                <?php $i=1; ?>
+                <YP:list order="id desc" catid="61" limit="3">
+                    <div class="list">
+                        <img src="/images/news-0{$i}.png" alt="{$r.title}" width="90" height="72">
+                        <div class="wen">
+                            <h3><a href="{$r.url}" title="{$r.title}">{$r.title}</a> <span>2018-08-07</span>
+                            </h3>
+                            <p> {$r.description|str_cut=###,100}......</p>
+                        </div>
+                    </div>
+                </YP:list>
+            </div>
+        </div>
+        <div class="newslist" style="display:none">
+            <YP:list order="listorder desc" catid="62" limit="1">
+                <div class="wentu">
+                    <a href="{$r.url}" title="{$r.title}">
+                        <img src="{$r.thumb}" alt="{$r.title}" width="590" height="240"></a>
+                    <h3><a href="{$r.url}" title="{$r.title}">{$r.title}</a> <span> {$r.createtime|date="Y-m-d",###}</span></h3>
+                    <p>{$r.description}.......</p>
+                </div>
+            </YP:list>
+            <div class="listbox">
+                <?php $i=1; ?>
+                <YP:list order="id asc" catid="62" limit="3">
+                    <div class="list">
+                        <img src="/images/news-0{$i}.png" alt="{$r.title}" width="90" height="72">
+                        <div class="wen">
+                            <h3><a href="{$r.url}" title="{$r.title}">{$r.title}</a> <span>2018-08-07</span>
+                            </h3>
+                            <p> {$r.description|str_cut=###,100}......</p>
+                        </div>
+                    </div>
+                </YP:list>
+            </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+    $('.index_news .menu li').mouseover(function () {
+        $(this).addClass("cur").siblings().removeClass("cur");
+        $(".index_news .newslist").eq($('.index_news .menu li').index(this)).show().siblings(".index_news .newslist").hide();
+    });
+</script>
+<div id="link_main">
+    <div id="link">
+        <div class="link_title"><h2>友情链接</h2></div>
+        <div class="link_body">
+            <div class="link_text">
+                <ul>
+                   <!-- <li><a href="http://www.baidu.com" title="">百度网络</a></li>
+                    <li><a href="http://www.baidu.com" title="">百度一下</a></li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="link_bottom"></div>
+    </div>
+</div>
+<include file="Home:footer"/>

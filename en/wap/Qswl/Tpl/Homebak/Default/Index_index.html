@@ -1,0 +1,142 @@
+
+<include file="Home:header"/>{__NOLAYOUT__}
+<div class="cpfl">
+		<div class="cpfl_t"><img src="images/gl_12.png" width="302" height="71" /></div>
+        <div class="flcon">
+            <ul>
+                <li><a href="{$Categorys[1][url]}"><img src="images/gl_13.jpg" width="220" height="163" alt="" /></a></li>
+				<li><a href="{$Categorys[2][url]}"><img src="images/gl_14.jpg" width="220" height="163" alt="" /></a></li>
+                <li><a href="{$Categorys[3][url]}"><img src="images/gl_16.jpg" width="220" height="163" alt="" /></a></li>
+                <li><a href="{$Categorys[4][url]}"><img src="images/gl_15.jpg" width="220" height="163" alt="" /></a></li>
+                <li><a href="{$Categorys[6][url]}"><img src="images/gl_17.jpg" width="220" height="163" alt="" /></a></li>
+            </ul>
+        </div>
+</div>
+
+<div class="scp1">
+		<div class="scp1_t"><img src="images/gl_03.png" width="270" height="100" alt="" /></div>
+        <div class="zxcp">
+            <ul>
+            	<YP:list name="Article" order="listorder desc" catid="12" limit="8" posid="5"  field="*" >
+                <li>
+                    <a href="{$r.url}"><img src="{$r.thumb}" width="278" height="203" alt="" /></a>
+                    <p><a href="{$r.url}">{$r.title|str_cut=###,38}</a></p>
+                </li>
+                </YP:list>
+            </ul>
+        </div>
+</div>
+
+
+
+<div class="gsjj">
+		<div class="gsjj_t"><img src="images/gl_19.png" width="513" height="59" alt="" /></div>
+        <div class="jjcon">西安广龙办公家具有限公司  （简称"广龙"）公司自成立以来来一直致力于办公、实验室家具的设计、研发、生产、销售和服务，形成了具有自我品牌、自主知识产权的系列产品，是一个现代办公商务制造家具企业，为现代办公商务家具领域提供着具有前瞻性、经典性的设计方案和健康、良好的办公家具环境，赢得了广大客户的高度赞誉，在业界确立了一定的优势地位。"广龙"秉承"用......<a href="" target="_blank" title="">[查看详细]</a></div>
+        <div class="jjpic"><img src="images/gl_18.png" width="1059" height="265" alt="" /></div>
+</div>
+
+<div class="synews">
+	<div class="synews_t"><a href="{$Categorys[10][url]}"><img src="images/gl_27.jpg" width="61" height="13" alt="" /></a></div>
+    <div class="xinwen">
+     <YP:list name="Article" order="id desc" catid="10" limit="1" posid="1"  field="*" >
+    <div class="xwpic"><a href="{$r.url}"><img src="{$r.thumb}" width="286" height="245" alt="" /></a></div>
+    <div class="xwcon">
+      <div class="xwcon_t"><p><a href="{$r.url}">{$r.title|str_cut=###,44}</a></p><span>{$r.createtime|toDate=###,'Y-m-d'}</span></div>
+      <div class="xwcon_p">{$r.description|strip_tags=###|str_cut=###,290}</div>
+      <div class="xwcon_b"><a href="{$Categorys[10][url]}"><img src="images/gl_31.jpg" width="75" height="19" alt="" /></a></div>
+    </div>
+    </YP:list>
+    
+    <ul>
+      <YP:list name="Article" order="id desc" catid="10" limit="8"  field="*" >
+        <li>
+        <p><a href="{$r.url}">{$r.title|str_cut=###,50}</a></p>
+        <span>{$r.createtime|toDate=###,'Y-m-d'}</span></li>
+        </YP:list>
+    </ul>
+  </div>
+</div>
+<style type="text/css">
+
+#demo {
+background: #FFF;
+overflow:hidden;
+width: 1200px;
+}
+#demo img {
+border: 1px solid #F2F2F2;
+}
+#indemo {
+float: left;
+width: 800%;
+}
+#demo1 {
+float: left;
+}
+#demo2 {
+float: left;
+}
+#demoa {
+background: #FFF;
+overflow:hidden;
+width: 662px;
+}
+#demoa img {
+border: 1px solid #F2F2F2;
+}
+#indemoa {
+float: left;
+width: 800%;
+}
+#demo1a {
+float: left;
+}
+#demo2a {
+float: left;
+}
+</style>
+
+
+<div class="gcal">
+	<div class="gcal_t"><a href="{$Categorys[8][url]}"><img src="images/gl_27.jpg" width="61" height="13" alt="" /></a></div>
+    <div class="gcal_c">
+        <div class="case_l"></div>
+        <div class="case_c">
+            <ul>
+            	<div id="demo">
+<div id="indemo">
+<div id="demo1">
+               <YP:list name="Article" order="id desc" catid="8" limit="20"  field="*" >
+                <li><a href="{$r.url}"><img src="{$r.thumb}" width="366" height="241" alt="" /></a><span><a href="{$r.url}">{$r.title|str_cut=###,44}</a></span><p>{$r.description|strip_tags=###|str_cut=###,100}<a href="{$r.url}">[查看详细]</a></p></li>
+                 </YP:list>
+                 </div>
+
+<div id="demo2"></div>
+</div>
+</div>
+            </ul>
+        </div>
+        <div class="case_r"></div>
+    </div>
+</div>
+<script>
+<!--
+var speed=30;
+var tab=document.getElementById("demo");
+var tab1=document.getElementById("demo1");
+var tab2=document.getElementById("demo2");
+tab2.innerHTML=tab1.innerHTML;
+function Marquee(){
+if(tab2.offsetWidth-tab.scrollLeft<=0)
+tab.scrollLeft-=tab1.offsetWidth
+else{
+tab.scrollLeft++;
+}
+}
+var MyMar=setInterval(Marquee,speed);
+tab.onmouseover=function() {clearInterval(MyMar)};
+tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
+-->
+</script>
+
+<include file="Home:footer"/>

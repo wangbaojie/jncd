@@ -1,0 +1,203 @@
+<include file="Home:header"/>{__NOLAYOUT__} 
+<div class="phBox">
+<div class="search-box">
+	<div class="search">
+		<div class="search-left">
+			<span>热门搜索： </span>  
+      		<YP:subcat  catid="10">
+            <a href="{$r.url}">{$r.catname}</a>  
+            </YP:subcat>  
+		</div>
+		<div class="sear">
+			<form method="GET" action="index.php?" 
+onsubmit="return check();">
+			<input type="hidden" id=""  name="m" value="Search"/>{if  APP_LANG}<input type="hidden" name="l" value="{:LANG_NAME}" />{/if}
+            <input type="hidden" name="module" value="Article"/>
+				<input type="text" class="input-box" name="keyword" id="s" > 
+				<input name="" type="submit" value="搜 索" class="button"> 
+			</form>
+            <script type="text/javascript">
+function check(){
+var name=document.getElementById('s').value;
+if(name=="" || name=="请输入您要搜索的内容" ){
+ alert('不能为空');	
+ document.getElementById('s').focus()
+  return false;
+  
+  }
+  
+  }
+</script>
+		</div>
+	</div>
+</div>
+</div>
+<div class="hnBox">
+	<div class="hotNav">
+    	<h2></h2>
+        <ul>
+        	<li><a href="{$Categorys[1][url]}"><div id="bise" class="bise1"><img src="images/gg.png"></div><span>高管专区</span></a></li>
+            <li><a href="{$Categorys[2][url]}"><div id="bise" class="bise2"><img  src="images/zhy.png"></div><span>职员专区</span></a></li>
+            <li><a href="{$Categorys[14][url]}"><div id="bise" class="bise3"><img src="images/hy.png"></div><span>会议专区</span></a></li>
+            <li><a href="{$Categorys[15][url]}"><div id="bise" class="bise4"><img src="images/ggu.png"></div><span>钢柜专区</span></a></li>
+            <li><a href="{$Categorys[6][url]}"><div id="bise" class="bise5"><img src="images/shg.png"></div><span>教学设备</span></a></li>
+        </ul>
+    </div>
+</div>
+<div class="newsBox">
+	<div class="news">
+    	<div class="about">
+        	<h2></h2>
+            <div class="abo1">
+            <p><a href="{$Categorys[17][url]}">西安申科办公家具有限公司是西北最大的办公家具领域专业公司。所生产、销售的产品遍及企业、政府、高校、公安、产业园、银行、国企等领域。公司成立16年来，本公司依托先进的生产技术，全新的产品销售拓展模式，严格的管理程序，周全的售后服务体系以及全体员工的努力，使西安申科办公家具有限公司在短短的几年时间内成为西北地区专业全面的办公环境解决方案的专家。</a></p>
+            <p><a href="{$Categorys[17][url]}">申科为消费者提供天然、环保、无污染、个性的办公家具，为使用者营造一个舒适、健康的工作和生活环境。申科充分考虑到客户的需求，尊重客户的意见，可以根据要求进行规划和设计。申科在销售产品的同时，提供设计、制作、送货、安装以及维修的一条龙专业服务。</a></p></div>
+            <a href="{$Categorys[17][url]}" class="mor">MORE+</a>
+        </div>
+        <div class="gnews">
+        	<h2></h2>
+            <dl>
+            	<dt><a href="{$Categorys[8][url]}"><img src="{$Categorys[8][image]}"></a></dt>
+                <YP:list name="Article" order="id desc" catid="8" limit="5"  field="*" >
+                <dd><a href="{$r.url}">{$r.title|str_cut=###,40}</a></dd>
+                </YP:list>
+            </dl>
+            <a href="{$Categorys[8][url]}" class="mor1">MORE+</a>
+        </div>
+        <div class="hnews">
+        	<h2></h2>
+            <dl>
+            	<dt><a href="{$Categorys[29][url]}"><img src="{$Categorys[29][image]}"></a></dt>
+                 <YP:list name="Article" order="id desc" catid="29" limit="5"  field="*" >
+                <dd><a href="{$r.url}">{$r.title|str_cut=###,40}</a></dd>
+                </YP:list>
+            </dl>
+            <a href="{$Categorys[29][url]}" class="mor1">MORE+</a>
+        </div>
+    </div>
+</div>
+<div class="hpBox">
+	<div class="hotPro">
+    	<h2></h2>
+        <div class="hotNa">
+        	<ul>
+            	<li><a href="{$Categorys[1][url]}" charset="cur3">高管专区</a></li>
+                <li><a href="{$Categorys[2][url]}">职员专区</a></li>
+                <li><a href="{$Categorys[14][url]}">会议专区</a></li>
+                <li><a href="{$Categorys[3][url]}">钢柜专区</a></li>
+                <li><a href="{$Categorys[6][url]}">教学设备</a></li>
+            </ul>
+        </div>
+        <div class="hotp">
+        	<ul>
+            <YP:list name="Article" order="id desc" catid="1" limit="4"  field="*" >
+            	<li><a href="{$r.url}"><img src="{$r.thumb}" width="260" height="190"><span>{$r.title|str_cut=###,30}</span></a></li>
+           </YP:list>
+            </ul>
+        </div>
+        <div class="hotp" style=" display:none">
+        	<ul>
+            	<YP:list name="Article" order="id desc" catid="2" limit="4"  field="*" >
+            	<li><a href="{$r.url}"><img src="{$r.thumb}" width="260" height="190"><span>{$r.title|str_cut=###,30}</span></a></li>
+           </YP:list>
+            </ul>
+        </div>
+        <div class="hotp" style=" display:none">
+        	<ul>
+            	<YP:list name="Article" order="id desc" catid="14" limit="4"  field="*" >
+            	<li><a href="{$r.url}"><img src="{$r.thumb}" width="260" height="190"><span>{$r.title|str_cut=###,30}</span></a></li>
+           </YP:list>
+            </ul>
+        </div>
+        <div class="hotp" style=" display:none">
+        	<ul>
+            	<YP:list name="Article" order="id desc" catid="3" limit="4"  field="*" >
+            	<li><a href="{$r.url}"><img src="{$r.thumb}" width="260" height="190"><span>{$r.title|str_cut=###,30}</span></a></li>
+           </YP:list>
+            </ul>
+        </div>
+        <div class="hotp" style=" display:none">
+        	<ul>
+            	<YP:list name="Article" order="id desc" catid="6" limit="4"  field="*" >
+            	<li><a href="{$r.url}"><img src="{$r.thumb}" width="260" height="190"><span>{$r.title|str_cut=###,30}</span></a></li>
+           </YP:list>
+            </ul>
+        </div>
+        <script type="text/jscript">
+			$('.hotNa ul li').mouseover(function () {
+				$(this).children().addClass("cur3");
+				$(this).siblings().children().removeClass("cur3");
+			$(".hotp").eq($('.hotNa ul li').index(this)).show().siblings(".hotp").hide();
+			$(".hotNa ul li >a").eq($('.hotNa ul li a').index(this)).show().siblings(".hotNa ul li >a").hide();
+	}); 
+</script>
+	<a href="{$Categorys[1][url]}" class="mor"></a>
+    </div>
+</div>
+<div class="caseBox">
+	<div class="case">
+    	<h2></h2>
+        <ul>
+        	<YP:list name="Article" order="id desc" catid="7" limit="8"  field="*" >
+            <li><a class="antu"><img src="{$r.thumb}" width="265" height="188"></a></li>
+            </YP:list>
+        </ul>
+        <a href="{$Categorys[29][url]}" class="mor"></a>
+    </div>
+    <script>
+	n=0;
+    	$(".anwen").hide().eq(0).show();
+		$(".case ul li").mouseenter(function(){
+			n=$(this).index();
+			$(".anwen").eq(n).show();
+			
+			});
+			$(".case ul li").mouseleave(function(){
+			n=$(this).index();
+			$(".anwen").eq(n).hide();
+			
+			})
+    </script>
+</div>
+<div class="kongBox">
+	<div class="kong">
+    	<h2></h2>
+        <h3>全网首推免费平面效果图制作，再创网络购物体验新高度。强大的3D设计，让每位用户清晰了解办公空间与搭配。</h3>
+        <ul>
+        	<YP:list name="Article" order="id desc" catid="18" limit="4"  field="*" >
+        	<li><a><img src="{$r.thumb}" width="240" height="180"><span>{$r.title|str_cut=###,25}</span></a></li>
+            </YP:list>
+        </ul>
+        
+    </div>
+</div>
+<div class="hezuoBox">
+	<div class="hezuo">
+    	<h2></h2>
+        <div class="choose">
+                <div class="mr_frbox" >
+                    <img class="but-left prev"  src="images/lc.png">
+                    <div class="anli">
+                        <ul>
+                        	<YP:link typeid="2" linktype="1" >
+                            <li><a><img src="{$r['logo']}"><span>{$r['name']}</span></a></li>
+                            </YP:link>
+                        </ul>
+                    </div>
+                    <img class="but-right next" src="images/rc.png">
+                </div>
+            </div>
+    </div>
+</div>
+<script language="javascript">
+            jQuery(".choose .mr_frbox").slide({titCell:"",mainCell:".anli ul",autoPage:true,effect:"leftLoop",autoPlay:true,vis:4});
+ </script>
+ <script>
+ $(".anli ul li a b").mouseenter(function(){
+	$(this).addClass("hbh");
+	 });
+	  $(".anli ul li a b").mouseleave(function(){
+	$(this).removeClass("hbh");
+	 })
+ </script>
+
+<include file="Home:footer"/>

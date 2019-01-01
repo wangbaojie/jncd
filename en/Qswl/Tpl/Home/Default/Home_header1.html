@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$seo_title}-{$site_name}</title>
+<meta name="keywords" content="{$seo_keywords}" />
+<meta name="description" content="{$seo_description}" />
+<link  type="text/css" rel="stylesheet" href="style/style.css" />
+ 
+
+<script src="js/jquery.js" language="javascript" ></script>
+<script language="javascript" src="js/lrtk.js"></script>
+<script src="js/jcarousellite.js" language="javascript" ></script>
+<script language="javascript" src="js/slide.js"></script>
+
+</head>
+
+<body>
+<div class="header">
+  	<div class="header_c">
+        <p>Hi! 欢迎光临西安广龙办公家具有限公司官网！</p>
+        <div class="header_r"> <a href="{$Categorys[12][url]}">{$Categorys[12][catname]}</a>|<a href="{$Categorys[13][url]}">{$Categorys[13][catname]}</a>|<a href="{$Categorys[11][url]}">{$Categorys[11][catname]}</a> </div>
+    </div>
+  </div>
+
+<div class="logo">
+<img src="images/gl_01.jpg" width="1200" height="120" />
+</div>
+
+
+
+
+<div class="nav">
+  <ul class="menu">
+    <li class="mainlevel libh linob"><a href="__ROOT__/"  style=" width:130px; display:block;text-align:center;">网站首页</a></li>
+    <li class="mainlevel" id="mainlevel_01" ><a href="{$Categorys[1][url]}">{$Categorys[1][catname]}</a>
+    	<ul id="sub_01" class="menual">
+        	<YP:subcat  catid="1">
+            <li><a href="{$r.url}">{$r.catname}</a></li>
+            </YP:subcat>
+        </ul>
+    </li>
+    <li class="mainlevel" id="mainlevel_02" ><a href="{$Categorys[2][url]}">{$Categorys[2][catname]}</a>
+    	<ul id="sub_01" class="menual">
+            <YP:subcat  catid="2">
+            <li><a href="{$r.url}">{$r.catname}</a></li>
+            </YP:subcat>
+        </ul>
+    </li>
+    <li class="mainlevel" id="mainlevel_03" ><a href="{$Categorys[3][url]}">{$Categorys[3][catname]}</a>
+    	<ul id="sub_01" class="menual">
+              <YP:subcat  catid="3">
+            <li><a href="{$r.url}">{$r.catname}</a></li>
+            </YP:subcat>
+        </ul>
+    </li>
+    <li class="mainlevel" id="mainlevel_04" ><a href="{$Categorys[4][url]}">{$Categorys[4][catname]}</a>
+    	<ul id="sub_01" class="menual">
+                 <YP:subcat  catid="4">
+            <li><a href="{$r.url}">{$r.catname}</a></li>
+            </YP:subcat>
+        </ul>
+    </li>
+    <li class="mainlevel" id="mainlevel_05" ><a href="{$Categorys[5][url]}">{$Categorys[5][catname]}</a>
+    	<ul id="sub_01" class="menual">
+             <YP:subcat  catid="5">
+            <li><a href="{$r.url}">{$r.catname}</a></li>
+            </YP:subcat>
+        </ul>
+    </li>
+    <li class="mainlevel" id="mainlevel_06" ><a href="{$Categorys[6][url]}">{$Categorys[6][catname]}</a>
+    	<ul id="sub_01" class="menual">
+              <YP:subcat  catid="6">
+            <li><a href="{$r.url}">{$r.catname}</a></li>
+            </YP:subcat>
+       </ul>
+    </li>
+    <li class="mainlevel" id="mainlevel_07" ><a href="{$Categorys[7][url]}">{$Categorys[7][catname]}</a>
+    	
+    </li>
+    <li class="mainlevel" id="mainlevel_08" ><a href="{$Categorys[8][url]}">{$Categorys[8][catname]}</a>
+    	
+    </li>
+    <li class="mainlevel" id="mainlevel_09" ><a href="{$Categorys[9][url]}">{$Categorys[9][catname]}</a>
+    	
+    </li>
+    <li class="mainlevel" id="mainlevel_10" ><a href="{$Categorys[10][url]}">{$Categorys[10][catname]}</a>
+    	
+    </li>
+    <li class="mainlevel"><a href="{$Categorys[11][url]}">{$Categorys[11][catname]}</a>
+    
+    </li>
+  </ul>
+</div>
+  
+
+<?php 
+	$mm = M('slide_data');
+	$ll = $mm->where("fid=1 order by listorder asc")->select();
+?>
+
+<div class="nav-banner">
+    <div class="banner">
+    	<ul>
+         <?php
+	  foreach($ll as $v){
+	  ?>
+        <li><img src="<?php echo $v[pic];?>" width="1900" height="542" alt="" /></li>
+		<?php
+	  } 
+	?>
+        
+        </ul>
+       <div class="small">
+        <?php 
+	$m = M('slide_data');
+$l = $m->where("fid=1")->select();
+	$cou = count($l);
+for($i=1;$i<$cou+1;$i++){
+	if($i==1){
+    	echo "<a href='javascript:void(0)' class='small_s'></a>";
+    }
+    else{
+	echo "<a href='javascript:void(0)' class=''></a>";
+    }
+}
+?>  
+
+
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+var  n=0;
+$(".banner ul li").hide().eq(0).show();
+$(".small a").mouseover(function(){
+	var n=$(".small a").index(this);
+	
+	$(".banner ul li").hide();
+	$(".banner ul li:eq("+n+")").show();
+	$(".small a").removeClass("small_s")
+	$(this).addClass("small_s")
+	})
+function changeImg(){
+	if(n<$(".banner ul li").length-1){
+			n=n+1;
+		}else{
+			n=0;
+		}
+	$(".banner ul li").hide();
+	$(".banner ul li:eq("+n+")").show();
+	$(".small a").removeClass("small_s");
+	$(".small a:eq("+n+")").addClass("small_s");
+}
+var timer = setInterval(changeImg,2000);
+$(".banner").mouseover(function(){
+	clearInterval(timer)
+	}).mouseout(function(){
+		timer =setInterval(changeImg,2000)
+		})
+
+</script>

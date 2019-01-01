@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> {$seo_title}-{$site_name} </title>
+    <meta name="keywords" content="{$seo_keywords}" />
+    <meta name="description" content="{$seo_description}" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script type="text/javascript" src="/js/jquery.SuperSlide.js"></script>
+
+</head>
+
+<body>
+<div id="top_main">
+    <div id="top">
+        <div id="top_1"><a href="" target="_self">Welcome to Xi'an energy superconducting magnet Technology Co., Ltd.</a></div>
+        <div id="top_2"><a href="" target="_self">Telephone number：+86-29-89612891</a></div>
+        <div class="top-ri"><a href="/">中文</a>|<a href="/en">English</a></div>
+    </div>
+</div>
+
+<div id="logo_main" style=" z-index:9999; background:white; width:100%">
+    <div id="logo">
+        <div id="logo_1">
+            <div class="WebLogo"><a href="" target=""><img src="/en/images/logo.png"></a></div>
+        </div>
+        <div id="navigation">
+            <ul class="navigationlist">
+                <li class="li1"><a href="/en" title="首页" class="current"><b>HOME</b></a></li>
+                <li class="li2">
+                    <a href="{$Categorys[17][url]}" title="关于我们" class=""><b>{$Categorys[17][catname]}</b></a>
+                    <ul class="subnavigationlist" style="display: none;">
+                        <li><a href="{$Categorys[56][url]}" title="企业简介">{$Categorys[56][catname]}</a></li>
+                        <li><a href="{$Categorys[65][url]}" title="企业文化">{$Categorys[65][catname]}</a></li>
+                    </ul>
+                </li>
+                <li class="li3">
+                    <a href="{$Categorys[42][url]}" title="产品中心" class=""><b>{$Categorys[42][catname]}</b></a>
+                    <ul class="subnavigationlist" style="display: none;">
+                        <li><a href="{$Categorys[63][url]}" title="加速器用超导磁体">{$Categorys[63][catname]}</a></li>
+                        <li><a href="{$Categorys[64][url]}" title="MCZ单晶硅超导磁体">{$Categorys[64][catname]}</a></li>
+                        <li><a href="{$Categorys[2][url]}" title="制冷机直接冷却磁体">{$Categorys[2][catname]}</a></li>
+                        <li><a href="{$Categorys[71][url]}" title="高温超导磁体">{$Categorys[71][catname]}</a></li>
+                        <li><a href="{$Categorys[3][url]}" title="医用MRI">{$Categorys[3][catname]}</a></li>
+                        <li><a href="{$Categorys[4][url]}" title="各类低温杜瓦">{$Categorys[4][catname]}</a></li>
+                        <li><a href="{$Categorys[5][url]}" title="其他超导类相关产品">{$Categorys[5][catname]}</a></li>
+                        <li><a href="{$Categorys[66][url]}" title="低温冷媒">{$Categorys[66][catname]}</a></li>
+                    </ul>
+                </li>
+                <li class="li4">
+                    <a href="{$Categorys[29][url]}" title="维修维护" class=""><b>{$Categorys[29][catname]}</b></a>
+                </li>
+                <li class="li5">
+                    <a href="{$Categorys[8][url]}" title="新闻中心" class=""><b>{$Categorys[8][catname]}</b></a>
+                    <ul class="subnavigationlist" style="display: none;">
+                        <li><a href="{$Categorys[60][url]}" title="集团动态">{$Categorys[60][catname]}</a></li>
+                        <li><a href="{$Categorys[61][url]}" title="行业动态">{$Categorys[61][catname]}</a></li>
+                        <li><a href="{$Categorys[62][url]}" title="专家观点">{$Categorys[62][catname]}</a></li>
+                    </ul>
+                </li>
+                <li class="li6"><a href="{$Categorys[67][url]}" title="资质证书" class=""><b>{$Categorys[67][catname]}</b></a></li>
+                <li class="li7">
+                    <a href="{$Categorys[68][url]}" title="联系我们" class=""><b>{$Categorys[68][catname]}</b></a>
+                    <ul class="subnavigationlist" style="display: none;">
+                        <li><a href="{$Categorys[69][url]}" title="联系我们">{$Categorys[69][catname]}</a></li>
+                        <li><a href="{$Categorys[70][url]}" title="核心价值">{$Categorys[70][catname]}</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    var a = $("#logo_main").offset().top;
+    $(window).scroll(function() {
+        var obj_height = document.documentElement.scrollTop || document.body.scrollTop;
+        if(obj_height >= a)
+        {
+            var this_width = $("#logo_main").width();
+            var obj_width = $(window).width();
+            $("#logo_main").css({"position":"fixed","left":(obj_width-this_width)/2,"top":"0px"});
+        }
+        else
+        {
+            $("#logo_main").css({"position":"relative","left":"0","top":"0px"});
+        }
+    });
+</script>
+<div id="banner_main">
+    <div id="banner">
+        <div class="tempWrap" style="overflow:hidden; position:relative; width:1903px">
+            <ul class="bannerlist" style="width: 3806px; left: 0px; position: relative; overflow: hidden; padding: 0px; margin: 0px;">
+                <li style="float: left; width: 1903px;"><img src="/en/images/banner.jpg" style="margin-left: -8px;"></li>
+                <li style="float: left; width: 1903px;"><img src="/en/images/banner1.jpg" style="margin-left: -8px;"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hd"><ul><li class="on">1</li><li class="">2</li></ul></div>
+</div>
+<script>if( $(".bannerlist li").length > 0 ){
+    $('#banner_main').slide({ titCell:'.hd ul', mainCell:'#banner ul', autoPlay:true, autoPage:true, delayTime:500, effect:'left'});
+    $(window).resize(function() {  CenterBanner(); });
+    $(document).ready(function(e) { CenterBanner(); });
+}else{
+    $("#banner_main").hide();
+}
+function CenterBanner(){
+    var imgWidth = parseInt( $(".bannerlist li img:first").width() );
+    if( imgWidth <= 0 ) return;
+    var winWidth = parseInt( $(window).width() );
+    var offset = parseInt( (winWidth-imgWidth)/2 );
+    $(".bannerlist li img").css("margin-left", offset+'px' );
+}
+
+</script>

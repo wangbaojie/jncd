@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ font-family:"Microsoft YaHei"}
+body, h1,h2,h3,h4,h5,ul,li,dl,dt,dd,input,p{ margin:0; padding:0;}
+img{ border:none; }
+a,ul,li,h1,h2,dl,dt,dd,em{ list-style:none; text-decoration:none;font-style: normal;
+    font-weight: normal;}
+
+.header, .content, .footer, .container { margin-left: auto; margin-right: auto; width: 1100px;}
+.header { width: 100%; overflow: hidden;background:url(../images/topd.png) no-repeat center top; height:120px;}
+.header_center {overflow: hidden; width: 1100px; margin: 0 auto; height: 100px;}
+.header_center h1 { float: left; margin-top:10px;}
+.header_center .phone { overflow: hidden; float: right;  margin-top: 32px;  padding-left: 45px;background:url(../images/topPhone.png) no-repeat left center;}
+.header_center .phone p { font-size: 13px; color: #fff;}
+.header_center .phone i { display: block; font-size: 26px;  color: #FFF; font-family: 'Times New Roman'; font-weight: bold;}
+
+
+.h_nav {  height: 49px;  line-height:49px;  overflow: hidden; background:#000; width:100%}
+.h_nav ul { overflow:hidden; width:1100px; margin:0 auto}
+.h_nav ul li { float: left;}
+.h_nav ul li a {  display: block; padding: 0 29px; color: #fff; font-size: 15px; }
+.h_nav ul li a:hover, .h_nav ul .cur a { color: #fff; text-decoration: none; background:#0173EB}
+
+
+.banner{position:relative; margin:0 auto; height:630px; overflow:hidden; width:100%;}
+.banner ul{ width:1920px; height:630px; position:absolute; bottom:0; left:50%; margin-left:-960px; }
+.banner ul li{ width:1920px; height:630px;}
+.banner ul li img{ width:1920px; height:630px;}
+.small{ position:absolute; left:50%; bottom:12%;cursor:pointer; margin-left:-38px}
+.small a{ width:12px; height:12px; background:#333; float:left; margin:0 6px; border-radius:25px}
+.small .small_s{ background:#0173EB; width:12px; height:12px;-webkit-transition: all 0.5s ease-in-out;}
+
+
+
+.research {background: #2e2e2e;}
+.Rscont { height: 70px; overflow: hidden;}
+.Rscont .hotword { height: 70px; line-height: 70px; width: 690px;  overflow: hidden; float: left;}
+.Rscont .hotword * { font-size: 16px; color: #fff; float: left;}
+.Rscont .hotword a { margin-right: 15px;}
+.Rscont .rsbox {float: right; width: 291px;  height: 39px;  margin-top: 16px;  background:url(../images/rsbox.png) no-repeat;}
+.Rscont .rsbox .cont_text {  width: 222px;  height: 21px; line-height: 21px;  color: #cdcdcd;font-size: 16px;  float: left;  padding: 9px 0px 9px 15px;  border: none;  background: none;  outline: none;}
+.Rscont .rsbox .cont_btn {  width: 42px;  height: 39px;  float: right; cursor: pointer;  border: none; background: none;}
+
+
+.liucheng { overflow: hidden;  width: 1117px;  margin: 0 auto;  height: 379px;  background:url(../images/liucheng_bg.jpg) no-repeat center top;  margin-bottom: 30px; margin-top:40px}
+.title { overflow: hidden; width: 100%; text-align: center;}
+.title p { font-size: 24px; color: #333;}
+.title h2 { font-size: 35px; color: #0173EB;}
+.title em {  display: block; font-size: 13px; color: #666060;  text-transform: uppercase;  font-family: Calibri;  margin-top: 10px;}
+.liucheng img { display: block;  margin: 30px auto;}
+.liucheng .phone { overflow: hidden;  width: 420px;  margin: 0 auto;}
+.liucheng .phone em {  display: block; float: left;  width: 60px;  font-size: 14px; color: #666; text-align: right;}
+.liucheng .phone span { display: block;  float: left;margin-left: 20px; font-size: 35px;color: #333;  font-family: 'Times New Roman'; position: relative; top: -5px;}
+.liucheng .phone a { display: block; font-size: 18px; color: #fff; width: 119px;  height: 36px;  background:url(../images/about_btn.png) no-repeat center right; text-align: center; line-height: 36px;  float: right;}
+
+
+.pro{ overflow:hidden; padding-bottom:40px}
+.pro li{ float:left; background:#f4f4f4; width:259px; height:264px; margin-bottom:16px; margin-right:16px}
+.pro li a:hover{ border:1px  solid #0173EB}
+.pro li a{ width:100%; display:block; height:260px}
+.pro li a img{ width:230px; height:180px; display:block; margin:15px auto; margin-top:15px}
+.pro li a span{ display:block; text-align:center; font-size:16px; line-height:40px; color:#2e2e2e}
+
+
+
+
+
+.koubei {overflow: hidden;width: 100%;height: 574px;padding-top:60px;background:url(../images/koubei_bg.jpg) no-repeat center top;}
+.koubei .title em {background: url(../images/koubei_t.png) no-repeat center;}
+.title.wt p {color: #fff;}
+.casB{width:1100px; margin:0 auto; overflow:hidden }
+.case{width:1100px;float:left;overflow:hidden;  position:relative; padding-top:20px; padding-left:2px}
+.case ul{ overflow:hidden}
+.case ul li {float: left;width: 240px;height: 220px;border: 10px solid #444;background-color: #fff;margin-right: 16px;}
+.case ul li a{width:240px;height:220px;  display:block; }
+.case ul li a img{width:240px;height:164px; display:block; margin:0 auto; border:1px solid #d5dae0}
+.case ul li a span{ line-height:40px; height:40px; font-size:14px; color:#333; text-align:center; display:block; width:240px}
+.pLeft{width:35px;height:35px;float:left; margin-top:66px; cursor: pointer; display: inline; margin-left:500px }
+.pRight{width:35px;height:35px;float:right;  margin-top:66px; cursor: pointer; margin-right:500px}
+
+
+
+
+
+.about {overflow: hidden;width: 100%;height: 533px;background: url(../images/about_bg.jpg) no-repeat center top;padding-top: 45px;}
+.about .title em {background: url(../images/about_t.png) no-repeat center;}
+.about .aboutbox {overflow: hidden;width: 1100px;margin: 0 auto;margin-top: 40px;}
+.about .vid{overflow: hidden;width: 552px;height: 330px;padding: 10px;background: url(../images/about_videoBg.png) no-repeat center;float: left;}
+.about .awen {overflow: hidden;float: left;margin-left:40px;padding-left: 30px;background: url(../images/about_01.png) no-repeat left top;width:450px;margin-top: 17px;}
+.about .awen h3 {font-size: 18px;}
+.about .awen h3 a {font-size: 18px;color: #333;}
+.about .awen em {display: block;font-size: 14px;color: #666;margin-bottom: 25px;}
+.about .awen p {font-size: 14px;color: #666;line-height: 25px;height: 125px;overflow: hidden;text-align: justify;margin-bottom: 60px;}
+.about .btn {overflow: hidden;width: 100%;}
+.about .btn a {display: block;width: 119px;height: 36px;text-align: center;line-height: 36px;font-size: 18px;color: #fff;margin-right: 10px;float: left;}
+.about .btn .a01 {background: url(../images/about_btn.png) no-repeat left center;}
+.about .btn .a02 {background: url(../images/about_btn.png) no-repeat right center;}
+
+
+
+
+.news {overflow: hidden;width: 1100px;margin: 0 auto;margin-bottom: 10px; margin-top:50px}	
+.newsleft {overflow: hidden;float: left;width: 600px;padding: 0 28px;height: 500px;border: 2px solid #e3e0e0;border-radius: 10px;}
+.news .top {overflow: hidden;width: 100%;margin-bottom: 20px;margin-top: 30px;}
+.news .top ul {overflow: hidden;float: left;}
+.news .top li {float: left;margin-right: 10px;width: 132px;height: 43px;text-align: center;line-height: 43px;font-size: 16px;color: #333;background: url(../images/news_btn.png) no-repeat right center;}
+.news .top li a {display: block;color: #333;text-decoration: none;}
+.news .top .newCur {background-position: left;}
+.news .top .newCur a {color: #fff;}
+.news .top h2 {float: left;font-weight: normal;width: 132px;height: 43px;text-align: center;line-height: 43px;background: url(../images/news_btn.png) no-repeat left center;font-size: 16px;}
+.news .top h2 a {color: #fff;text-decoration: none;}
+.news .top .more {float: right;margin-top: 10px;font-size: 14px;color: #999;}
+.newsleft .newsbox {overflow: hidden;width: 100%;height: 395px;position: relative;}
+.newsleft .newslist {overflow: hidden;width: 100%;height: 100%;}
+.newsleft .tuwen {overflow: hidden;width: 100%;height: 196px;margin-bottom: 20px;}
+.newsleft .tuwen .wen {overflow: hidden;float: right;width: 290px;}
+.newsleft .tuwen h3 {font-weight: normal;font-size: 18px; color: #333;  margin: 13px 0; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.newsleft .tuwen h3 a { color: #333;}
+.newsleft .tuwen p {  font-size: 14px; color: #666; line-height: 22px;height: 66px; overflow: hidden; text-align: justify;   margin-bottom: 15px;}
+.newsleft .tuwen .xq { display: block;  width: 87px;  height: 30px;  text-align: center;   line-height: 30px;  font-size: 14px; color: #fff;background: url(../images/koubei_btn.png) no-repeat center bottom;}
+.newsleft .list { overflow: hidden; width: 100%;}
+.newsleft .list li {  overflow: hidden;  display: block;  padding-left: 20px;  background: url(../images/news_li.png) no-repeat left center;  font-size: 14px; line-height: 35px;}
+.newsleft .list a { display: block;  float: left;  width: 420px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; color: #666;}
+.newsleft .list span {  display: block;  float: right; color: #999;}
+.newsright {  overflow: hidden; float: right;   width: 340px;  padding: 0 28px;  height: 500px; border: 2px solid #e3e0e0;border-radius: 10px;}
+.news .wenda { overflow: hidden; width: 100%; height: 380px; position: relative;}
+.news .wenda ul{ overflow:hidden; position:absolute; width:100%}
+.news .wenda dl{ overflow:hidden; width:100%; height:99px; border-bottom:1px dashed #fdd1d1; margin-bottom:25px;}
+.news .wenda dt{ font-weight:normal; font-size:14px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; margin-bottom:12px; padding-left:33px; background:url(../images/news_w.png) no-repeat left center; line-height:25px;}
+.news .wenda dt a{ color:#333}
+.news .wenda dd{ font-size:14px; line-height:22px; color:#333; height:44px; padding-left:33px; background: url(../images/news_d.png) no-repeat left top;}
+
+
+
+
+.footer { overflow:hidden; width:100%; padding:35px 0; background:url(../images/di.jpg) no-repeat center top; height:320px;}
+.footer .topnav{ overflow:hidden; width:100%; padding-bottom:30px; border-bottom:1px solid #4c4946; margin-bottom:35px; padding-top:70px}
+.footer .topnav ul{ overflow:hidden; width:1100px; margin:0 auto;}
+.footer .topnav li{ float:left; width:109px; text-align:center; border-right:1px dotted #6a6765; font-size:14px;}
+.footer .topnav li a{ color:#c4c1c1;}
+.footer .topnav li.last{ border:none}
+.footer .btm{ overflow:hidden; width:1100px; margin:0 auto; padding-top:10px}
+.footer h2{ float:left;  margin-top: 9px;}
+.footer .info{ overflow:hidden; float:left; margin-left:60px; width:530px;}
+.footer .info p{ font-size:14px; color:#999; line-height:30px;}
+.footer .info a{ color:#999}
+.footer .btm ul{ overflow:hidden; float:right;}
+.footer .btm li{ float:left; width:110px; text-align:center; font-size:12px; color:#fff; margin-left:10px;}
+.footer .btm li img{ display:block; margin-bottom:10px;}
+

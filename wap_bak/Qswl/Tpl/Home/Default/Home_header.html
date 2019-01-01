@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{$seo_title}-{$site_name}</title>
+<meta name="keywords" content="{$seo_keywords}" />
+<meta name="description" content="{$seo_description}" />
+<link type="text/css" rel="stylesheet" href="css/shk.css">
+<script src="js/jquery-1.8.3.js"></script>
+<script language="javascript" type="text/javascript" src="js/ss.js"></script>
+<script language="javascript" type="text/javascript" src="js/slide.js"></script>
+
+</head>
+
+<body>
+<script> var _hmt = _hmt || []; (function() { var hm = document.createElement("script"); hm.src = "https://hm.baidu.com/hm.js?84713ba69bc20b34b4cea88e08debb4a"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s); })(); </script>
+<div class="pageTop">
+    <div class="pageTopBody">
+        <p>欢迎进入西安申科办公家具有限公司官网！</p>
+        <div class="pageTopright"><a>收藏本站</a>|<a href="{$Categorys[9][url]}">联系我们</a>|<a href="{$Categorys[19][url]}">网站地图</a></div>
+    </div>
+</div>
+<div class="logoLine">
+    <div class="logoBox">
+        <a><img src="images/logo.png"></a>
+        <dl class="PhoneBox"><dd>申科订购热线：</dd><dt><img src="images/dianhu.png"></dt></dl>
+    </div>
+</div>
+<!--<div class="navBox">
+    <div class="nav">
+        <ul>
+        	<li><a href="__ROOT__/" class="cur">首页</a></li>
+            <YP:subcat  catid="0">
+            <li><a href="{$r.url}">{$r.catname}</a></li>
+            </YP:subcat>
+        </ul>
+    </div>
+</div>-->
+
+<div class="navBox">
+        	<div class="nav"id="navmenu">
+                <ul class="menu">
+                    <li class="mainlevel"><a class="ssse sse {if $catid<1}cur{/if}" href="__ROOT__/">首页</a></li>
+                    <YP:subcat  catid="0" key="i">
+                    <li class="mainlevel" id="mainlevel_0{$i}"><a  {if $r[id]==$catid}class="ssse cur"{else}class="ssse"{/if}   href="{$r.url}">{$r.catname}</a>
+                        <ul id="sub_01" class="menual">
+                           <YP:subcat  catid="$r[id]" id="res">
+                            <li><a href="{$res.url}" target="_blank">{$res.catname}</a></li>
+                             </YP:subcat> 
+                    	</ul>
+                    </li>
+                   </YP:subcat>
+                </ul>
+            </div>
+         </div>
+
+<div class="bannerBox">
+    <div class="banner">
+    <?php 
+	$mm = M('slide_data');
+	$ll = $mm->where("fid=1 order by listorder asc")->select();	
+	?>
+    	<ul>
+        	<?php
+	  foreach($ll as $v){
+	  ?>
+            <li><img src="<?php echo $v[pic];?>"></li>
+            <?php
+	  } 
+	?>
+        </ul>
+       <div class="small">
+       <?php 
+	$m = M('slide_data');
+$l = $m->where("fid=1")->select();
+	$cou = count($l);
+for($i=1;$i<$cou+1;$i++){
+	if($i==1){
+    	echo "<a class=small_s></a>";
+    }
+    else{
+    	echo "<a href='javascript:void(0)' class=''></a>";
+    }
+	
+}
+?>  
+               
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+var  n=0;
+$(".banner ul li").hide().eq(0).show();
+$(".small a").mouseover(function(){
+	var n=$(".small a").index(this);
+	
+	$(".banner ul li").hide();
+	$(".banner ul li:eq("+n+")").show();
+	$(".small a").removeClass("small_s")
+	$(this).addClass("small_s")
+	})
+function changeImg(){
+	if(n<$(".banner ul li").length-1){
+			n=n+1;
+		}else{
+			n=0;
+		}
+	$(".banner ul li").hide();
+	$(".banner ul li:eq("+n+")").show();
+	$(".small a").removeClass("small_s");
+	$(".small a:eq("+n+")").addClass("small_s");
+}
+var timer = setInterval(changeImg,2000);
+$(".banner").mouseover(function(){
+	clearInterval(timer)
+	}).mouseout(function(){
+		timer =setInterval(changeImg,2000)
+		})
+
+</script>

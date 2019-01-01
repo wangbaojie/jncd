@@ -1,0 +1,9 @@
+<div class="main-pro">
+        	<ul>
+            <volist name="list" id="r">
+            	<li><a href="{$r.url}"><img src="{$r.thumb}"><p>{$r.title|str_cut=###,30}</p></a></li>
+                </volist>
+            </ul>
+            <div class="clear"></div>
+            <div id="pages" class="page">{$pages}</div>
+         </div>

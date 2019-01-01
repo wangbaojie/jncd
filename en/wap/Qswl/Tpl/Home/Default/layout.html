@@ -1,0 +1,23 @@
+<include file="Home:header"/>
+  <div class="serji">
+    <ul>
+      <div class="serji-1">{$catname}&nbsp;&gt;&gt;</div>
+      <YP:subcat  catid="$bcid">
+      <li><a href="{$r.url}">{$r.catname}</a></li>
+      </YP:subcat>
+    </ul>
+  </div>
+  <div class="sin-a">
+    <div class="sin-a-l"><span>{$catname}</span></div>
+  </div>
+  <div class="sin-2x">
+  {__CONTENT__}
+    
+  </div>
+
+            
+            
+   
+
+<include file="Home:footer"/>
+

@@ -1,0 +1,79 @@
+<include file="Home:header"/>{__NOLAYOUT__} 
+  <div class="sin-a">
+    <div class="sin-a-l"><span>{$Categorys[17][catname]}</span></div>
+     <div class="sin-1-r"><a href="{$Categorys[17][url]}">更多&gt;&gt;</a></div>
+  </div>
+  <div class="sin-2x">
+    <div class="sabout">
+    陕西神马建筑安装工程有限公司，位于陕西省西安市东郊，属股份制企业。公司占地面积7000平方米，现有员工150名，专业技术人员15名，中级职称6名。是一集生产、设计、安装、服务为一体的专业化门窗生产企业。 公司主要经营：防火门、塑钢门窗、铝合金门窗、钢质隔热防火门、防盗安全门、钢质防火窗，是陕西乃至全国范围内塑钢门窗、铝合金门窗、钢质隔热防火门、防盗安全门、钢质防火窗的优秀生产、销售以及施工企业。同时生产各种特种、异型门窗（如变压器门、车库门、隔声门等等）及金属结构产品，年产各种门窗十余万平方米，被广大的用户、建设单位、施工企业选用，行销本省各地市和周边各省 
+    </div>
+    <div class="sin-1">
+      <div class="sin-1-l"><span>{$Categorys[2][catname]}</span></div>
+      <div class="sin-1-r"><a href="{$Categorys[2][url]}">更多&gt;&gt;</a></div>
+    </div>
+    <div class="sin-2x">
+      <div class="sin-2">
+       <YP:list name="Article" order="id desc" catid="2" limit="4"  field="*" >
+        <div class="in-10-1"><a href="/wap{$r.url}"><img src="{$r.thumb}" width="150" height="110"></a><a href="/wap{$r.url}"><b>{$r.title|str_cut=###,20}</b></a></div>
+        </YP:list>  
+          
+      </div>
+    </div>
+    
+    <div class="sin-1">
+      <div class="sin-1-l"><span>{$Categorys[3][catname]}</span></div>
+      <div class="sin-1-r"><a href="{$Categorys[3][url]}">更多&gt;&gt;</a></div>
+    </div>
+    <div class="sin-2x">
+      <div class="sin-2">
+       <YP:list name="Article" order="id desc" catid="3" limit="4"  field="*" >
+        <div class="in-10-1"><a href="/wap{$r.url}"><img src="{$r.thumb}" width="150" height="110"></a><a href="/wap{$r.url}"><b>{$r.title|str_cut=###,20}</b></a></div>
+        </YP:list>  
+          
+      </div>
+    </div>
+    
+    <div class="sin-1">
+      <div class="sin-1-l"><span>{$Categorys[4][catname]}</span></div>
+      <div class="sin-1-r"><a href="{$Categorys[4][url]}">更多&gt;&gt;</a></div>
+    </div>
+    <div class="sin-2x">
+      <div class="sin-2">
+       <YP:list name="Article" order="id desc" catid="4" limit="4"  field="*" >
+        <div class="in-10-1"><a href="/wap{$r.url}"><img src="{$r.thumb}" width="150" height="110"></a><a href="/wap{$r.url}"><b>{$r.title|str_cut=###,20}</b></a></div>
+        </YP:list>  
+          
+      </div>
+    </div>
+    
+    
+    <div class="sin-1">
+      <div class="sin-1-l"><span>{$Categorys[5][catname]}</span></div>
+      <div class="sin-1-r"><a href="{$Categorys[5][url]}">更多&gt;&gt;</a></div>
+    </div>
+    <div class="sin-2x">
+      <div class="sin-2">
+       <YP:list name="Article" order="id desc" catid="5" limit="4"  field="*" >
+        <div class="in-10-1"><a href="/wap{$r.url}"><img src="{$r.thumb}" width="150" height="110"></a><a href="/wap{$r.url}"><b>{$r.title|str_cut=###,20}</b></a></div>
+        </YP:list>  
+          
+      </div>
+    </div>
+
+    
+    <div class="sin-1">
+      <div class="sin-1-l"><span>{$Categorys[8][catname]}</span></div>
+      <div class="sin-1-r"><a href="{$Categorys[8][url]}">更多&gt;&gt;</a></div>
+    </div>
+    <div class="sin-2x">
+      <div class="sin-2">
+        <ul>
+          <YP:list name="Article" order="id desc" catid="8" limit="6"  field="*" >
+          <li><span>{$r.createtime|toDate=###,'Y-m-d'}</span><a href="/wap{$r.url}">{$r.title|str_cut=###,37}</a></li>
+          </YP:list>
+        </ul>
+      </div>
+    </div>
+    
+    
+<include file="Home:footer"/>
