@@ -1,0 +1,44 @@
+<include file="Home:header"/>{__NOLAYOUT__}
+<div class="sin-a">
+    <div class="sin-a-l"><span>{$Categorys[17][catname]}</span></div>
+    <div class="sin-1-r"><a href="{$Categorys[17][url]}">more+&gt;&gt;</a></div>
+</div>
+<div class="sin-2x">
+    <div class="sabout">
+        Xi'an Juneng Superconducting Magnets Technology Co., Ltd. was established in 2011. It is a holding subsidiary of
+        Western Superconducting Materials Technology Co., Ltd. It has the production capacity of NbTi and Nb3Sn/Cu,
+        while Xi'an Juneng Superconducting Magnets Technology Co., Ltd. has the complete superconducting magnet research
+        and development and manufacturing capacity.
+
+
+    </div>
+    <div class="sin-1">
+        <div class="sin-1-l"><span>{$Categorys[67][catname]}</span></div>
+        <div class="sin-1-r"><a href="{$Categorys[67][url]}">more+&gt;&gt;</a></div>
+    </div>
+    <div class="sin-2x">
+        <div class="sin-2">
+            <YP:list name="Article" order="id desc" catid="67" limit="4" field="*">
+                <div class="in-10-1"><a href="/wap{$r.url}"><img src="{$r.thumb}" width="150" height="110"></a><a
+                        href="/wap{$r.url}"><b>{$r.title|str_cut=###,20}</b></a></div>
+            </YP:list>
+
+        </div>
+    </div>
+
+    <div class="sin-1">
+        <div class="sin-1-l"><span>{$Categorys[8][catname]}</span></div>
+        <div class="sin-1-r"><a href="{$Categorys[8][url]}">more+&gt;&gt;</a></div>
+    </div>
+    <div class="sin-2x">
+        <div class="sin-2">
+            <YP:list name="Article" order="id desc" catid="8" limit="4" field="*">
+                <div class="in-10-1"><a href="/wap{$r.url}"><img src="{$r.thumb}" width="150" height="110"></a><a
+                        href="/wap{$r.url}"><b>{$r.title|str_cut=###,20}</b></a></div>
+            </YP:list>
+
+        </div>
+    </div>
+
+
+    <include file="Home:footer"/>
