@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,user-scalable=no" name="viewport">
+    <title>{$seo_title}-{$site_name}</title>
+    <meta name="keywords" content="{$seo_keywords}"/>
+    <meta name="description" content="{$seo_description}"/>
+
+    <link href="images/slayout.css" rel="stylesheet" type="text/css">
+    <link href="images/slider.css" rel="stylesheet" type="text/css">
+    <script charset="Shift_JIS" src="images/jquery-1.8.3.js"></script>
+    <script defer src="images/slider.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                prevText: "",
+                nextText: "",
+                start: function (slider) {
+
+                }
+            });
+        });
+    </script>
+
+
+</head>
+<body style="" class=" hPC">
+<div class="stopx">
+    <div style="float: right;margin-bottom: 0.4rem;margin-right: 0.5rem">
+    <a href="/wap" style="color:#fff;border:  1px solid #333;border-radius:3px;border-right:0;background-color: #065fb9;padding: 0.2em 0.8em 0.2em 0.8em ">中文
+    </a><a href="/wap/en" style="color:#fff;border:  1px solid #333;border-radius:3px;background-color: #065fb9;padding: 0.2em">English</a>
+</div>
+    <div style="clear: right" class="stop-logo"><img src="images/logo.png">
+
+        <div class="qh">
+
+        </div>
+    </div>
+</div>
+<div class="smenu">
+    <ul>
+        <li><a href="__ROOT__/">Home</a></li>
+        <li><a href="{$Categorys[17][url]}">{$Categorys[17][catname]}</a></li>
+        <li><a href="{$Categorys[42][url]}">{$Categorys[42][catname]}</a></li>
+        <li><a href="{$Categorys[67][url]}">{$Categorys[67][catname]}</a></li>
+    </ul>
+</div>
+<div class="smenu">
+    <ul>
+
+        <li><a href="{$Categorys[8][url]}">{$Categorys[8][catname]}</a></li>
+        <li><a href="{$Categorys[60][url]}">{$Categorys[60][catname]}</a></li>
+        <li><a href="{$Categorys[62][url]}">{$Categorys[62][catname]}</a></li>
+        <li><a href="{$Categorys[68][url]}">{$Categorys[68][catname]}</a></li>
+    </ul>
+</div>
+
+<?php
+	$mm = M('slide_data');
+	$ll = $mm->where("fid=2 order by listorder asc")->select();
+?>
+<div class="pro-switch">
+    <div class="slider">
+        <div class="flexslider">
+            <ul class="slides">
+                <?php
+	  foreach($ll as $v){
+	  ?>
+
+                <li>
+                    <div class="img"><img src="<?php echo $v[pic];?>" alt=""/></div>
+                </li>
+                <?php
+	  }
+	?>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
